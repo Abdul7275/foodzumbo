@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurants in Sultanpur</title>
+    <meta name=viewport content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        hr{
+            margin-bottom: 10px;
+            margin-top: 0px;
+            color: black;
+        }
+        .foot{
+            border-color: #33b5e5;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-----------------Navigation Bar---------------------->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-------Logo-------->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">FoodZumbo</a>
+            </div>
+
+            <!--------------Menuitems---------------->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../about.html">About</a> </li>
+                    <li><a href="#contact">Contact Us</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------Main Content------------------------------>
+    <div class="container">
+        <center><h1>Restaurants in Sultanpur</h1></center>
+        <table class="table" >
+            <tbody>
+                <tr>
+                    <td width="20%"><img src="../Images/diet.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="restraunt/diet.php">DIET RESTAURANT (veg)</a></h4>
+                            <font size="1.5px">
+                                <li align="left"><b><font color="red" >5% flat discount on all items.</font></b></li>
+                                <li align="left"><b>COD Available</b></li>
+                                <li align="left"><b>Order Time:50 Min.</b></li>
+                                <li align="left"><b>Free delivery above Rs.<font color="red" >150</font></b></li>
+                                <li align="left"><b>Order Timing: 12:00 NOON to 9:00 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="restraunt/diet.php"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+                <tr>
+                    <td width="20%"><img src="../Images/savera.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="restraunt/savera.php"> Savera Restaurant</a></h4>
+                            <font size="1.5px">
+                                <li align="left"><b>COD Available</b></li>
+                                <li align="left"><b>Order Time:1 HOUR.</b></li>
+                                <li align="left"><b>Free delivery above Rs.150</b></li>
+                                <li align="left"><b>Order Timing: 12:00 NOON to 8:00 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="restraunt/savera.php"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+                <tr>
+                    <td width="20%"><img src="../Images/sundae.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="restraunt/sundae.php"> Sundae</a></h4>
+                            <font size="1.5px">
+                                <li align="left"><b>COD Available</b></li>
+                                <li align="left"><b>Order Time:1 HOUR.</b></li>
+                                <li align="left"><b>Free delivery above Rs.150</b></li>
+                                <li align="left"><b>Order Timing: 12:00 NOON to 8:00 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="restraunt/sundae.php"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+                <tr>
+                    <td width="20%"><img src="../Images/delhidarbar.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="restraunt/darbaar.php">Delhi Darbar (Non Veg)</a></h4>
+                            <font size="1.5px">
+                            <li align="left"><b><font color="red" >Opened...!!</font></b></li>
+                            <li align="left"><b>COD Available</b></li>
+                            <li align="left"><b>Order Time: 40 Min.</b></li>
+                            <li align="left"><b>Free delivery above Rs.200</b></li>
+                            <li align="left"><b>Order Timing: 12:00 NOON to 8:30 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="restraunt/darbaar.php"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+                 <tr>
+                    <td width="20%"><img src="../Images/gupta.jpg" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="#">GUPTA BAKERS</a></h4>
+                            <font size="1.5px">
+                            <li align="left"><b><font color="red" ><?php 
+                            $resttimefrom = 73000;
+                            $resttimeto = 223000;
+                            $currentTime = (int) date('Gis');
+                            
+                            if ($currentTime > $resttimefrom && $currentTime < $resttimeto )
+                            {
+                                $stat="open";
+                            }
+                            else
+                            {
+                                $stat="close";
+                            }
+                            echo $stat;
+                            ?>
+                            </font></b></li>
+                            <li align="left"><b>COD Available</b></li>
+                            <li align="left"><b>Order Time:2-3 HOURS.</b></li>
+                            <li align="left"><b>Free delivery above Rs.300</b></li>
+                            <li align="left"><b>Order Timing: 12:00 NOON to 7:30 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="#"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+                <tr>
+                    <td width="20%"><img src="../Images/go69.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="#">Go69 Pizza</a></h4>
+                            <font size="1.5px">
+                            <li align="left"><b><font color="red" >Opening Soon..!!</font></b></li>
+                            <li align="left"><b>COD Available</b></li>
+                            <li align="left"><b>Order Time:45 HOURS.</b></li>
+                            <li align="left"><b>Free delivery above Rs.200</b></li>
+                            <li align="left"><b>Order Timing: 12:00 NOON to 10:30 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="#"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+                <tr>
+                    <td width="20%"><img src="../Images/motimahal.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="#">Moti Mahal</a></h4>
+                            <font size="1.5px">
+                            <li align="left"><b><font color="red" >Opening Soon..!!</font></b></li>
+                            <li align="left"><b>COD Available</b></li>
+                            <li align="left"><b>Order Time: 1:30 HOURS.</b></li>
+                            <li align="left"><b>Free delivery above Rs.250</b></li>
+                            <!----<li align="left"><b>Order Timing: 12:00 NOON to :30 P.M.</b></li>---->
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="#"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+
+                <tr>
+                    <td width="20%"><img src="../Images/lazeez.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4><a href="#">LAZEEZ HOTEL (veg/non-veg)</a></h4>
+                            <font size="1.5px">
+                                <li align="left"><b><font color="red" >Opening Soon..!!</font></b></li>
+                                <li align="left"><b>COD Available</b></li>
+                                <li align="left"><b>Order Time:1 HOUR.</b></li>
+                                <li align="left"><b>Free delivery above Rs.200</b></li>
+                                <li align="left"><b>Order Timing: 12:00 NOON to 8:30 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="#"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+                <tr>
+                    <td width="20%"><img src="../Images/tunday.png" class="img img-responsive img-circle"> </td>
+                    <td padding="0px">
+                        <ul>
+                            <h4 ><a href="#">Tunday Kawabi</a></h4>
+                            <font size="1.5px">
+                                <li align="left"><b><font color="red" >Opening Soon..!!</font></b></li>
+                                <li align="left"><b>COD Available</b></li>
+                                <li align="left"><b>Order Time:2-3 HOURS.</b></li>
+                                <li align="left"><b>Free delivery above Rs.300</b></li>
+                                <li align="left"><b>Order Timing: 12:00 NOON to 7:30 P.M.</b></li>
+                            </font>
+                        </ul>
+                    </td>
+                    <td width="5%"><a href="#"><button type="button" class="btn btn-primary btn-sm">Menu</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer  class="container-fluid text-center">
+    <div class="foot">
+        <div><center><h3>About us.</h3></center>
+            <center>
+                FoodZumbo is most convenient online food ordering site for all the colleges ,universities<br>
+                and all the people of sultanpur.It connects people with the best restaurants around them.<br>
+                Delivering only in sultanpur, FoodZumbo is the only site for delivering the best of foods&nbsp;&nbsp;<br>
+                from the restaurants around you of your choice.<br>
+                &nbsp;&nbsp;We believe food is a pleasure and ordering should be fast and definitely a fun experience.<br>
+                Ordering with foodzumbo is as easy as a 5-step recipe: enjoy n share ur experience with<br>
+                us...!!!!!<br>
+            </center><br><hr></div>
+
+        <a name="contact"></a>
+        <center><h3><b>Get in Touch</b></h3></center>
+        <center>
+            <a href="http://www.facebook.com/foodzumbo"> <img src="../Images/facebook_sq.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+            <a href="log.html"> <img src="../Images/twitter_sq.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+            <a href="#"> <img src="../Images/instagram_sq.png"></a>
+        </center><br><hr>
+
+        <div>
+            <center>
+                <b><h3>Contact Us.</h3></b>
+                Feel free to contact with us at our Helpline no. <b>7068987538,8574925398,9457816243</b><br>
+                For any Suggestions/Queries kindly mail us at <b>FoodZumbo@gmail.com</b>
+            </center>
+        </div>
+    </div>
+</footer>
+</html>
