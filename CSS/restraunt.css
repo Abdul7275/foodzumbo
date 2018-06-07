@@ -1,0 +1,37 @@
+.rest_name{
+  font-family: verdana;
+  font-size: 24px;
+}
+.rest_address{
+  font-family: verdana;
+  color: grey;
+  font-size: 20px;
+}
+.foodtype{
+box-shadow: inset 1px 0px 100px 32px #ABABAB,0px 0px 25px 7px #DDDDDD;
+-webkit-box-shadow: inset 1px 0px 100px 32px #ABABAB,0px 0px 25px 7px #DDDDDD;
+-moz-box-shadow: inset 1px 0px 100px 32px #ABABAB,0px 0px 25px 7px #DDDDDD;
+-o-box-shadow: inset 1px 0px 100px 32px #ABABAB,0px 0px 25px 7px #DDDDDD;
+} 
+  .textox {
+   width: 200px;
+   height: 20px;
+   border: solid 2px #00E3E3;
+   padding: 2px;
+   border-radius: 5px;
+   font-size: 12px;
+   box-shadow: 0px 1px 2px 0px #9C9C9C;
+   background-color: #FFFFFF;
+   outline: none;
+   color: #474747;
+  }
+.textox:hover  {
+   border: 2px solid #FF00D5;
+  }
+.textox:focus  {
+   border: solid 2px #00D43C;
+   box-shadow: inset 0px 1px 2px 0px #9C9C9C;
+  }
+.textox:active  {
+   border: solid 2px #0043EB;
+  }
